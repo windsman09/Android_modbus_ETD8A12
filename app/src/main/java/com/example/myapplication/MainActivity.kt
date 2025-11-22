@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
     private val OUTPUT_OFF = 0x200
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        val lantai = intent.getIntExtra("lantai", 1)
+        title = "Kontrol Relay Lantai $lantai"
+
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
@@ -36,6 +40,11 @@ class MainActivity : AppCompatActivity() {
         binding.btnConnect.setOnClickListener {
             if (modbus == null) connectModbus() else disconnectModbus()
         }
+
+        binding.btnRefresh.setOnClickListener {
+            if (modbus != null) readAllChannels()
+        }
+
     }
 
     override fun onDestroy() {
@@ -169,7 +178,7 @@ class MainActivity : AppCompatActivity() {
                             switches[i].isChecked = isOn
                             labels[i].text = if (isOn) "ON" else "OFF"
                             labels[i].setBackgroundColor(if (isOn) Color.parseColor("#00AA00") else Color.parseColor("#4F4F4F"))
-                            
+
                         }
                     }
                 }
