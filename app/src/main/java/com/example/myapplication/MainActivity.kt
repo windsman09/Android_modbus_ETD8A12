@@ -169,6 +169,7 @@ class MainActivity : AppCompatActivity() {
                             switches[i].isChecked = isOn
                             labels[i].text = if (isOn) "ON" else "OFF"
                             labels[i].setBackgroundColor(if (isOn) Color.parseColor("#00AA00") else Color.parseColor("#4F4F4F"))
+                            
                         }
                     }
                 }
