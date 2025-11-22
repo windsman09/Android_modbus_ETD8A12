@@ -3,18 +3,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnLantai1"
-        android:layout_width="wrap_content"
+    <!-- Judul -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lantai 1"/>
+        android:text="ME SYAHDAN DAN KIJANG"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/title_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/poppins_bolditalic"
+        android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/btnLantai2"
-        android:layout_width="wrap_content"
+
+    <!-- Grid untuk tombol -->
+    <GridLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lantai 2"/>
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
 
+        <Button
+            android:id="@+id/btnModul1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 1" />
+
+        <Button
+            android:id="@+id/btnModul2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 2" />
+
+        <Button
+            android:id="@+id/btnModul3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 3" />
+
+        <Button
+            android:id="@+id/btnModul4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 4" />
+
+        <!-- Tambahkan tombol lainnya sesuai kebutuhan -->
+    </GridLayout>
 </LinearLayout>

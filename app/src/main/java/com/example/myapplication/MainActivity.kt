@@ -3,6 +3,7 @@ package com.example.myapplication
 
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.GridLayout
 import android.widget.LinearLayout
 import android.widget.Switch
 import android.widget.TextView
@@ -13,6 +14,7 @@ import com.example.myapplication.extensions.viewBinding
 import com.ghgande.j2mod.modbus.facade.ModbusTCPMaster
 import com.ghgande.j2mod.modbus.procimg.SimpleRegister
 import kotlinx.coroutines.*
+import android.widget.FrameLayout
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,16 +25,15 @@ class MainActivity : AppCompatActivity() {
     private val labels = mutableListOf<TextView>()
     private val switches = mutableListOf<Switch>()
 
-    private val OUTPUT_ON = 0x100
-    private val OUTPUT_OFF = 0x200
+    private val OUTPUT_ON = 0x100 // 256
+    private val OUTPUT_OFF = 0x200 // 512
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(binding.root)
 
         val lantai = intent.getIntExtra("lantai", 1)
         title = "Kontrol Relay Lantai $lantai"
-
-        super.onCreate(savedInstanceState)
-        setContentView(binding.root)
 
         updateConnectionStatus(false)
         buildChannelUI()
@@ -44,7 +45,6 @@ class MainActivity : AppCompatActivity() {
         binding.btnRefresh.setOnClickListener {
             if (modbus != null) readAllChannels()
         }
-
     }
 
     override fun onDestroy() {
@@ -89,7 +89,8 @@ class MainActivity : AppCompatActivity() {
                 withContext(Dispatchers.Main) {
                     updateConnectionStatus(true)
                     Toast.makeText(this@MainActivity, "Connected to $host:$port", Toast.LENGTH_SHORT).show()
-                    readAllChannels() // Read initial state after connect
+                    readAllChannels() // ✅ Baca status awal
+                    startAutoRefresh() // ✅ Auto-refresh setiap 5 detik
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
@@ -118,37 +119,69 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+
     private fun buildChannelUI() {
-        for (i in 0 until 12) {
+        val customNames = listOf(
+            "Lampu K1A", "K1A AC1", "K1A AC2", "Kelas 2B",
+            "Kelas 3A", "Kelas 3B", "Kelas 4A", "Kelas 4B",
+            "Kelas 5A", "Kelas 5B", "Kelas 6A", "Kelas 6B"
+        )
+
+        // Gunakan GridLayout sebagai container
+        val gridLayout = GridLayout(this).apply {
+            rowCount = (customNames.size + 1) / 2
+            columnCount = 2
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT
+            )
+        }
+
+        for (i in customNames.indices) {
             val label = TextView(this).apply {
-                text = "Channel ${i + 1}"
+                text = customNames[i]
                 textSize = 18f
-                setBackgroundColor(Color.parseColor("#4F4F4F")) // Default OFF color
-                setTextColor(Color.WHITE)
+                setTextColor(Color.BLACK)
             }
+
             val toggle = Switch(this).apply {
                 isEnabled = false
-                setOnCheckedChangeListener { _, isChecked ->
-                    if (modbus != null) {
-                        writeRegister(i, isChecked)
-                        // Update UI immediately after write
-                        label.text = if (isChecked) "ON" else "OFF"
-                        label.setBackgroundColor(if (isChecked) Color.parseColor("#00AA00") else Color.parseColor("#4F4F4F"))
-                    }
-                }
             }
 
-            labels.add(label)
-            switches.add(toggle)
-
-            val layout = LinearLayout(this).apply {
+            val innerLayout = LinearLayout(this).apply {
                 orientation = LinearLayout.HORIZONTAL
+                setPadding(16, 16, 16, 16)
                 addView(label)
                 addView(toggle)
             }
 
-            binding.channelContainer.addView(layout)
+            val card = com.google.android.material.card.MaterialCardView(this).apply {
+                radius = 12f
+                setCardBackgroundColor(Color.WHITE)
+                cardElevation = 8f
+                useCompatPadding = true
+                layoutParams = GridLayout.LayoutParams().apply {
+                    width = 0
+                    columnSpec = GridLayout.spec(GridLayout.UNDEFINED, 1f)
+                    setMargins(8, 8, 8, 8)
+                }
+                addView(innerLayout)
+            }
+
+            labels.add(label)
+            switches.add(toggle)
+            gridLayout.addView(card)
         }
+
+        // Tambahkan frame di sekitar grid
+        val frameLayout = FrameLayout(this).apply {
+            setPadding(16, 16, 16, 16)
+            setBackgroundColor(Color.LTGRAY) // Warna frame
+            addView(gridLayout)
+        }
+
+        binding.channelContainer.addView(frameLayout)
     }
 
     private fun writeRegister(index: Int, state: Boolean) {
@@ -167,18 +200,17 @@ class MainActivity : AppCompatActivity() {
     private fun readAllChannels() {
         activityScope.launch {
             try {
-                // This returns a Register[] array
                 val response = modbus?.readMultipleRegisters(0, 12)
                 response?.let {
                     withContext(Dispatchers.Main) {
                         for (i in 0 until 12) {
-                            // Access the register by its index in the array
                             val value = it[i].value
-                            val isOn = (value == OUTPUT_ON)
+                            val isOn = (value == OUTPUT_ON || value == 256) // ✅ 256 = ON
                             switches[i].isChecked = isOn
                             labels[i].text = if (isOn) "ON" else "OFF"
-                            labels[i].setBackgroundColor(if (isOn) Color.parseColor("#00AA00") else Color.parseColor("#4F4F4F"))
-
+                            labels[i].setBackgroundColor(
+                                if (isOn) Color.parseColor("#00AA00") else Color.parseColor("#4F4F4F")
+                            )
                         }
                     }
                 }
@@ -190,4 +222,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun startAutoRefresh() {
+        activityScope.launch {
+            while (modbus != null) {
+                readAllChannels()
+                delay(5000) // refresh setiap 5 detik
+            }
+        }
+    }
 }
