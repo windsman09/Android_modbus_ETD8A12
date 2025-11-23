@@ -32,6 +32,13 @@
         android:useDefaultMargins="true">
 
         <Button
+            android:id="@+id/btnCustom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Custom" />
+
+        <Button
             android:id="@+id/btnModul1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -51,13 +58,6 @@
             android:layout_height="wrap_content"
             android:layout_columnWeight="1"
             android:text="Modul 3" />
-
-        <Button
-            android:id="@+id/btnModul4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="Modul 4" />
 
         <!-- Tambahkan tombol lainnya sesuai kebutuhan -->
     </GridLayout>

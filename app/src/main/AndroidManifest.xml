@@ -30,7 +30,9 @@
         <!-- Halaman Relay Control -->
         <activity android:name=".MainActivity"
             android:exported="false"/>
-
+<!-- Halaman Modul1 -->
+        <activity android:name=".Modul1Activity"
+            android:exported="false"/>
 
     </application>
 </manifest>

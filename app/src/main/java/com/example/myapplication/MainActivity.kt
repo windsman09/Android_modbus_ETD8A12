@@ -3,22 +3,20 @@ package com.example.myapplication
 
 import android.graphics.Color
 import android.os.Bundle
-import android.widget.GridLayout
-import android.widget.LinearLayout
-import android.widget.Switch
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+//import androidx.gridlayout.widget.GridLayout
 import com.example.myapplication.databinding.ActivityMainBinding
-import com.example.myapplication.extensions.viewBinding
-import com.ghgande.j2mod.modbus.facade.ModbusTCPMaster
-import com.ghgande.j2mod.modbus.procimg.SimpleRegister
+import com.google.android.material.card.MaterialCardView
 import kotlinx.coroutines.*
-import android.widget.FrameLayout
+import com.ghgande.j2mod.modbus.procimg.SimpleRegister
+import com.ghgande.j2mod.modbus.facade.ModbusTCPMaster
+import android.view.View
+import android.view.ViewGroup
 
 class MainActivity : AppCompatActivity() {
 
-    private val binding by viewBinding(ActivityMainBinding::inflate)
+    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
     private val activityScope = CoroutineScope(Dispatchers.IO)
     private var modbus: ModbusTCPMaster? = null
 
@@ -27,13 +25,11 @@ class MainActivity : AppCompatActivity() {
 
     private val OUTPUT_ON = 0x100 // 256
     private val OUTPUT_OFF = 0x200 // 512
+    private val DEFAULT_IP_PORT = "10.21.240.2:5000" // ✅ IP default
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
-        val lantai = intent.getIntExtra("lantai", 1)
-        title = "Kontrol Relay Lantai $lantai"
 
         updateConnectionStatus(false)
         buildChannelUI()
@@ -53,6 +49,7 @@ class MainActivity : AppCompatActivity() {
         activityScope.cancel()
     }
 
+    /** Update status koneksi */
     private fun updateConnectionStatus(isConnected: Boolean) {
         if (isConnected) {
             binding.btnConnect.text = "Connected"
@@ -68,17 +65,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /** Koneksi ke Modbus */
     private fun connectModbus() {
         activityScope.launch {
-            val ipInput = binding.editIp.text.toString().trim()
-            if (ipInput.isEmpty()) {
-                withContext(Dispatchers.Main) {
-                    Toast.makeText(this@MainActivity, "Please enter IP address", Toast.LENGTH_LONG).show()
-                }
-                return@launch
-            }
-
-            val parts = ipInput.split(":")
+            val parts = DEFAULT_IP_PORT.split(":")
             val host = parts[0]
             val port = if (parts.size == 2) parts[1].toIntOrNull() ?: 502 else 502
 
@@ -89,8 +79,8 @@ class MainActivity : AppCompatActivity() {
                 withContext(Dispatchers.Main) {
                     updateConnectionStatus(true)
                     Toast.makeText(this@MainActivity, "Connected to $host:$port", Toast.LENGTH_SHORT).show()
-                    readAllChannels() // ✅ Baca status awal
-                    startAutoRefresh() // ✅ Auto-refresh setiap 5 detik
+                    readAllChannels()
+                    startAutoRefresh()
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
@@ -101,6 +91,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /** Disconnect Modbus */
     private fun disconnectModbus() {
         activityScope.launch {
             try {
@@ -119,16 +110,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
-
+    /** Membuat UI 12 channel */
     private fun buildChannelUI() {
         val customNames = listOf(
-            "Lampu K1A", "K1A AC1", "K1A AC2", "Kelas 2B",
-            "Kelas 3A", "Kelas 3B", "Kelas 4A", "Kelas 4B",
-            "Kelas 5A", "Kelas 5B", "Kelas 6A", "Kelas 6B"
+            "Channel 1", "Channel 2", "Channel 3", "Channel 4",
+            "Channel 5", "Channel 6", "Channel 7", "Channel 8",
+            "Channel 9", "Channel 10", "Channel 11", "Channel 12"
         )
 
-        // Gunakan GridLayout sebagai container
         val gridLayout = GridLayout(this).apply {
             rowCount = (customNames.size + 1) / 2
             columnCount = 2
@@ -147,6 +136,9 @@ class MainActivity : AppCompatActivity() {
 
             val toggle = Switch(this).apply {
                 isEnabled = false
+                setOnCheckedChangeListener { _, isChecked ->
+                    writeRegister(i, isChecked)
+                }
             }
 
             val innerLayout = LinearLayout(this).apply {
@@ -156,7 +148,7 @@ class MainActivity : AppCompatActivity() {
                 addView(toggle)
             }
 
-            val card = com.google.android.material.card.MaterialCardView(this).apply {
+            val card = MaterialCardView(this).apply {
                 radius = 12f
                 setCardBackgroundColor(Color.WHITE)
                 cardElevation = 8f
@@ -174,16 +166,16 @@ class MainActivity : AppCompatActivity() {
             gridLayout.addView(card)
         }
 
-        // Tambahkan frame di sekitar grid
         val frameLayout = FrameLayout(this).apply {
             setPadding(16, 16, 16, 16)
-            setBackgroundColor(Color.LTGRAY) // Warna frame
+            setBackgroundColor(Color.LTGRAY)
             addView(gridLayout)
         }
 
         binding.channelContainer.addView(frameLayout)
     }
 
+    /** Menulis register */
     private fun writeRegister(index: Int, state: Boolean) {
         activityScope.launch {
             try {
@@ -197,6 +189,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /** Membaca semua channel */
     private fun readAllChannels() {
         activityScope.launch {
             try {
@@ -205,7 +198,7 @@ class MainActivity : AppCompatActivity() {
                     withContext(Dispatchers.Main) {
                         for (i in 0 until 12) {
                             val value = it[i].value
-                            val isOn = (value == OUTPUT_ON || value == 256) // ✅ 256 = ON
+                            val isOn = (value == OUTPUT_ON || value == 256)
                             switches[i].isChecked = isOn
                             labels[i].text = if (isOn) "ON" else "OFF"
                             labels[i].setBackgroundColor(
@@ -222,12 +215,19 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /** Auto refresh setiap 5 detik */
     private fun startAutoRefresh() {
         activityScope.launch {
             while (modbus != null) {
                 readAllChannels()
-                delay(5000) // refresh setiap 5 detik
+                delay(5000)
             }
         }
     }
 }
+
+
+fun ViewGroup.addViewToContainer(view: View) {
+    this.addView(view)
+}
+

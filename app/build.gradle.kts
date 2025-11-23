@@ -51,8 +51,9 @@ android {
     }
 }
 
+kotlin
 dependencies {
-
+    implementation("commons-net:commons-net:3.11.1") // Add this line
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")

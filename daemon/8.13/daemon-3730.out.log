@@ -24952,10 +24952,10 @@ BUILD FAILED in 1s
 e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:36:17 Unresolved reference 'btnConnect'.
 e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:49:21 Unresolved reference 'btnConnect'.
 e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:50:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:51:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:54:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:55:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:56:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:51:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:54:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:55:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:56:21 Unresolved reference 'btnConnect'.
 
 FAILURE: Build failed with an exception.
 
@@ -26741,13 +26741,13 @@ BUILD FAILED in 957ms
 2025-11-21T19:47:15.576+0700 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 49th build in daemon [uptime: 5 hrs 31 mins 21.552 secs, performance: 98%, GC rate: 0.00/s, heap usage: 3% of 2 GiB]
 2025-11-21T19:47:15.576+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
 2025-11-21T19:47:15.577+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3e4405f6-bac8-47e6-bde1-84bd4f799f10,javaHome=/opt/android-studio/jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/home/keyfath/Documents/Android/daemon,pid=3730,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:36:17 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:49:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:50:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:51:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:54:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:55:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:56:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:36:17 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:49:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:50:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:51:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:54:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:55:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:56:21 Unresolved reference 'btnConnect'.
 
 FAILURE: Build failed with an exception.
 
@@ -27036,9 +27036,9 @@ BUILD FAILED in 1s
 2025-11-21T19:48:14.422+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-21T19:48:14.422+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-21T19:48:14.422+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-21T19:48:17.596+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt~
+2025-11-21T19:48:17.596+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-21T19:48:17.596+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 296 directories to track changes
-2025-11-21T19:48:17.596+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt
+2025-11-21T19:48:17.596+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-21T19:48:17.596+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 295 directories to track changes
 2025-11-21T19:48:17.628+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:49984 to /127.0.0.1:34699.
 2025-11-21T19:48:17.629+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 4445: received class org.gradle.launcher.daemon.protocol.Build
@@ -27061,14 +27061,14 @@ BUILD FAILED in 1s
 2025-11-21T19:48:17.631+0700 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 50th build in daemon [uptime: 5 hrs 32 mins 23.607 secs, performance: 98%, GC rate: 0.00/s, heap usage: 3% of 2 GiB]
 2025-11-21T19:48:17.631+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
 2025-11-21T19:48:17.631+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3e4405f6-bac8-47e6-bde1-84bd4f799f10,javaHome=/opt/android-studio/jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/home/keyfath/Documents/Android/daemon,pid=3730,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:20:1 Extension property must have accessors or be abstract.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:38:28 Unresolved reference 'setOnClickListener'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:51:32 Unresolved reference 'text'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:52:32 Unresolved reference 'setBackgroundColor'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:53:32 Unresolved reference 'isEnabled'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:56:32 Unresolved reference 'text'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:57:32 Unresolved reference 'setBackgroundColor'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:58:32 Unresolved reference 'isEnabled'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:20:1 Extension property must have accessors or be abstract.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:38:28 Unresolved reference 'setOnClickListener'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:51:32 Unresolved reference 'text'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:52:32 Unresolved reference 'setBackgroundColor'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:53:32 Unresolved reference 'isEnabled'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:56:32 Unresolved reference 'text'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:57:32 Unresolved reference 'setBackgroundColor'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:58:32 Unresolved reference 'isEnabled'.
 
 FAILURE: Build failed with an exception.
 
@@ -27551,9 +27551,9 @@ BUILD FAILED in 1s
 2025-11-21T19:52:16.661+0700 [DEBUG] [sun.rmi.client.ref] RMI RenewClean-[127.0.0.1:17928,org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface$ClientLoopbackSocketFactory@1f0e29f4]: free connection (reuse = true)
 2025-11-21T19:52:16.661+0700 [DEBUG] [sun.rmi.transport.tcp] RMI RenewClean-[127.0.0.1:17928,org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface$ClientLoopbackSocketFactory@1f0e29f4]: reuse connection
 2025-11-21T19:52:16.661+0700 [DEBUG] [sun.rmi.transport.tcp] RMI RenewClean-[127.0.0.1:17928,org.jetbrains.kotlin.daemon.common.LoopbackNetworkInterface$ClientLoopbackSocketFactory@1f0e29f4]: create reaper
-2025-11-21T19:52:18.042+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt~
+2025-11-21T19:52:18.042+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-21T19:52:18.042+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 296 directories to track changes
-2025-11-21T19:52:18.042+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt
+2025-11-21T19:52:18.042+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-21T19:52:18.042+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 295 directories to track changes
 2025-11-21T19:52:18.072+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:37748 to /127.0.0.1:34699.
 2025-11-21T19:52:18.073+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 4530: received class org.gradle.launcher.daemon.protocol.Build
@@ -27576,13 +27576,13 @@ BUILD FAILED in 1s
 2025-11-21T19:52:18.076+0700 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 51st build in daemon [uptime: 5 hrs 36 mins 24.052 secs, performance: 98%, GC rate: 0.00/s, heap usage: 3% of 2 GiB]
 2025-11-21T19:52:18.076+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
 2025-11-21T19:52:18.076+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=3e4405f6-bac8-47e6-bde1-84bd4f799f10,javaHome=/opt/android-studio/jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/home/keyfath/Documents/Android/daemon,pid=3730,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:37:17 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:50:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:51:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:52:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:55:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:56:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/MainActivity.kt:57:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:37:17 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:50:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:51:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:52:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:55:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:56:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:57:21 Unresolved reference 'btnConnect'.
 
 FAILURE: Build failed with an exception.
 

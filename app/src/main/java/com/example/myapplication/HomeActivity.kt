@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.databinding.ActivityHomeBinding
 import android.widget.TextView
 import android.view.animation.AnimationUtils
+
+//private val ActivityHomeBinding.btn: Any
+
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
 
@@ -14,14 +17,14 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnModul1.setOnClickListener {
+        binding.btnCustom.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.putExtra("lantai", 1)
             startActivity(intent)
         }
 
-        binding.btnModul2.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+        binding.btnModul1.setOnClickListener {
+            val intent = Intent(this, Modul1Activity::class.java)
             intent.putExtra("lantai", 2)
             startActivity(intent)
         }
