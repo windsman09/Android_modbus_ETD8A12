@@ -1,41 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
 
-    <LinearLayout
+    <!-- Judul -->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="ME SYAHDAN DAN KIJANG"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/title_background"
+        android:elevation="4dp"
+        android:fontFamily="@font/poppins_bolditalic"
+        android:layout_marginBottom="50dp"
+        android:paddingBottom="16dp"/>
 
-        <EditText
-            android:id="@+id/editIp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter IP:PORT (e.g., 10.21.240.2:5000)"
-            android:inputType="text" />
+
+    <!-- Grid untuk tombol -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
 
         <Button
-            android:id="@+id/btnConnect"
-            android:layout_width="match_parent"
+            android:id="@+id/btnCustom"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Connect" />
+            android:layout_columnWeight="1"
+            android:text="Custom"
+            android:layout_marginBottom="16dp"/>
 
         <Button
-            android:id="@+id/btnRefresh"
-            android:layout_width="match_parent"
+            android:id="@+id/btnModul1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Refresh Status" />
+            android:layout_columnWeight="1"
+            android:text="Modul 1" />
 
-        <LinearLayout
-            android:id="@+id/channelContainer"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btnModul2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="16dp" />
+            android:layout_columnWeight="1"
+            android:text="Modul 2"
+            android:layout_marginBottom="16dp"/>
 
-    </LinearLayout>
-</ScrollView>
+        <Button
+            android:id="@+id/btnModul3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 3" />
+        <Button
+            android:id="@+id/btnModul4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 4"
+            android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btnModul5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 5" />
+        <Button
+            android:id="@+id/btnModul6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 6"
+            android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btnModul7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 7" />
+        <Button
+            android:id="@+id/btnModul8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 8"
+            android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btnModul9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 9" />
+        <Button
+            android:id="@+id/btnModul10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 10"
+            android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btnModul11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 11" />
+        <Button
+            android:id="@+id/btnModul12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 12"
+            android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btnModul13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 13" />
+        <Button
+            android:id="@+id/btnModul14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 14" />
+        <Button
+            android:id="@+id/btnModul15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Modul 15" />
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Tambahkan tombol lainnya sesuai kebutuhan -->
+    </GridLayout>
+</LinearLayout>

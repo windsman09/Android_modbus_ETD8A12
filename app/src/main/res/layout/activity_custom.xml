@@ -9,12 +9,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <EditText
-            android:id="@+id/editIp"
+            android:id="@+id/etIpPort"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter IP:PORT (e.g., 10.21.240.2:5000)"
+            android:hint="IP:Port (contoh 10.21.240.2:5000)"
             android:inputType="text" />
+
+
 
         <Button
             android:id="@+id/btnConnect"

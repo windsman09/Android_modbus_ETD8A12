@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapplication"
+    namespace = "com.example.modol"
     compileSdk = 34
 
     defaultConfig {
@@ -53,7 +53,7 @@ android {
 
 kotlin
 dependencies {
-    implementation("commons-net:commons-net:3.11.1") // Add this line
+    implementation("commons-net:commons-net:3.11.1")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
@@ -73,5 +73,7 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-    implementation("com.ghgande:j2mod:3.1.1")
+    implementation("com.ghgande:j2mod:3.2.0")
+    implementation("androidx.gridlayout:gridlayout:1.0.0")
+
 }

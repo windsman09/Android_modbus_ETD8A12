@@ -1813,25 +1813,25 @@ BUILD SUCCESSFUL in 12s
 package="com.example.myapplication" found in source AndroidManifest.xml: /home/keyfath/Documents/Android/app/src/main/AndroidManifest.xml.
 Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
 Recommendation: remove package="com.example.myapplication" from the source AndroidManifest.xml: /home/keyfath/Documents/Android/app/src/main/AndroidManifest.xml.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:8:46 Unresolved reference 'ActivityModul2Binding'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:16:28 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:16:28 Not enough information to infer type argument for 'T'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:16:28 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:16:28 Property delegate must have a 'getValue(Modul1Activity, KProperty1<Modul1Activity, ERROR CLASS: Cannot infer argument for type parameter T>)' method. None of the following functions is applicable:
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:8:46 Unresolved reference 'ActivityModul2Binding'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:16:28 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:16:28 Not enough information to infer type argument for 'T'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:16:28 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:16:28 Property delegate must have a 'getValue(Modul2Activity, KProperty1<Modul2Activity, ERROR CLASS: Cannot infer argument for type parameter T>)' method. None of the following functions is applicable:
 fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:16:28 Not enough information to infer type argument for 'T'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:16:40 Unresolved reference 'ActivityModul2Binding'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:28:33 Unresolved reference 'channelsContainer'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:101:9 None of the following candidates is applicable:
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:16:28 Not enough information to infer type argument for 'T'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:16:40 Unresolved reference 'ActivityModul2Binding'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:28:33 Unresolved reference 'channelsContainer'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:101:9 None of the following candidates is applicable:
 fun setContentView(p0: Int): Unit
 fun setContentView(p0: View!): Unit
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:101:32 Cannot access 'val File.root: File': it is internal in file.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:109:17 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:113:17 Unresolved reference 'btnRefresh'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:126:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:127:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:130:21 Unresolved reference 'btnConnect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:131:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:101:32 Cannot access 'val File.root: File': it is internal in file.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:109:17 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:113:17 Unresolved reference 'btnRefresh'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:126:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:127:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:130:21 Unresolved reference 'btnConnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:131:21 Unresolved reference 'btnConnect'.
 
 FAILURE: Build failed with an exception.
 
@@ -2126,9 +2126,9 @@ BUILD FAILED in 3s
 2025-11-23T22:04:09.379+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T22:04:09.379+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T22:04:09.379+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T22:04:17.884+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T22:04:17.884+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T22:04:17.885+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 169 directories to track changes
-2025-11-23T22:04:17.885+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T22:04:17.885+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T22:04:17.885+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 169 directories to track changes
 2025-11-23T22:04:17.924+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:60040 to /127.0.0.1:45921.
 2025-11-23T22:04:17.925+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 555: received class org.gradle.launcher.daemon.protocol.Build
@@ -4065,9 +4065,9 @@ BUILD SUCCESSFUL in 4s
 2025-11-23T22:20:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T22:20:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T22:20:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T22:20:48.057+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T22:20:48.057+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T22:20:48.057+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 300 directories to track changes
-2025-11-23T22:20:48.058+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T22:20:48.058+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T22:20:48.058+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 300 directories to track changes
 2025-11-23T22:20:48.089+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:41876 to /127.0.0.1:45921.
 2025-11-23T22:20:48.090+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 939: received class org.gradle.launcher.daemon.protocol.Build
@@ -4090,8 +4090,8 @@ BUILD SUCCESSFUL in 4s
 2025-11-23T22:20:48.093+0700 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 10th build in daemon [uptime: 32 mins 19.031 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
 2025-11-23T22:20:48.093+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
 2025-11-23T22:20:48.093+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=13d2de9d-84c1-4151-a4a3-2567424879df,javaHome=/opt/android-studio/jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/home/keyfath/Documents/Android/daemon,pid=4757,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:14:1 Extension property must have accessors or be abstract.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:89:34 Unresolved reference 'addView'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:14:1 Extension property must have accessors or be abstract.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:89:34 Unresolved reference 'addView'.
 
 FAILURE: Build failed with an exception.
 
@@ -4423,9 +4423,9 @@ BUILD FAILED in 1s
 2025-11-23T22:21:29.378+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T22:21:29.378+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T22:21:29.379+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T22:21:35.075+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T22:21:35.075+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T22:21:35.075+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 300 directories to track changes
-2025-11-23T22:21:35.075+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T22:21:35.075+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T22:21:35.075+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 300 directories to track changes
 2025-11-23T22:21:35.103+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:34644 to /127.0.0.1:45921.
 2025-11-23T22:21:35.105+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 1023: received class org.gradle.launcher.daemon.protocol.Build
@@ -4448,7 +4448,7 @@ BUILD FAILED in 1s
 2025-11-23T22:21:35.109+0700 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 11th build in daemon [uptime: 33 mins 6.046 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
 2025-11-23T22:21:35.109+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
 2025-11-23T22:21:35.109+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=13d2de9d-84c1-4151-a4a3-2567424879df,javaHome=/opt/android-studio/jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/home/keyfath/Documents/Android/daemon,pid=4757,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:14:1 Extension property must have accessors or be abstract.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:14:1 Extension property must have accessors or be abstract.
 
 FAILURE: Build failed with an exception.
 
@@ -4855,9 +4855,9 @@ BUILD FAILED in 1s
 2025-11-23T22:24:33.614+0700 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(22)-127.0.0.1: (port 43401) connection closed
 2025-11-23T22:24:33.615+0700 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(22)-127.0.0.1: close connection, socket: Socket[addr=/127.0.0.1,port=57252,localport=43401]
 2025-11-23T22:24:33.615+0700 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(22)-127.0.0.1: socket close: Socket[addr=/127.0.0.1,port=57252,localport=43401]
-2025-11-23T22:24:37.861+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T22:24:37.861+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T22:24:37.861+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 300 directories to track changes
-2025-11-23T22:24:37.862+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T22:24:37.862+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T22:24:37.862+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 300 directories to track changes
 2025-11-23T22:24:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T22:24:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
@@ -5043,23 +5043,23 @@ BUILD FAILED in 1s
 2025-11-23T22:26:50.702+0700 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 12th build in daemon [uptime: 38 mins 21.64 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
 2025-11-23T22:26:50.703+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
 2025-11-23T22:26:50.703+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=13d2de9d-84c1-4151-a4a3-2567424879df,javaHome=/opt/android-studio/jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/home/keyfath/Documents/Android/daemon,pid=4757,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:8:17 Unresolved reference 'gridlayout'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:12:19 Unresolved reference 'commons'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:18:25 Unresolved reference 'ModbusTCPMaster'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:123:25 Unresolved reference 'writeSingleRegister'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:123:54 Unresolved reference 'SimpleRegister'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:160:26 Unresolved reference 'ModbusTCPMaster'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:161:25 Unresolved reference 'connect'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:192:40 Unresolved reference 'readMultipleRegisters'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:193:17 Argument type mismatch: actual type is 'R?', but 'K' was expected.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:193:27 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:193:31 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:194:21 Suspension functions can only be called within coroutine body.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:196:41 Cannot infer type for this parameter. Please specify it explicitly.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:196:41 Not enough information to infer type argument for 'V'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:196:47 Unresolved reference 'value'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:207:17 Argument type mismatch: actual type is 'kotlin.Unit', but 'K' was expected.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:218:25 Unresolved reference 'disconnect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:8:17 Unresolved reference 'gridlayout'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:12:19 Unresolved reference 'commons'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:18:25 Unresolved reference 'ModbusTCPMaster'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:123:25 Unresolved reference 'writeSingleRegister'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:123:54 Unresolved reference 'SimpleRegister'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:160:26 Unresolved reference 'ModbusTCPMaster'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:161:25 Unresolved reference 'connect'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:192:40 Unresolved reference 'readMultipleRegisters'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:193:17 Argument type mismatch: actual type is 'R?', but 'K' was expected.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:193:27 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:193:31 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:194:21 Suspension functions can only be called within coroutine body.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:196:41 Cannot infer type for this parameter. Please specify it explicitly.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:196:41 Not enough information to infer type argument for 'V'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:196:47 Unresolved reference 'value'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:207:17 Argument type mismatch: actual type is 'kotlin.Unit', but 'K' was expected.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:218:25 Unresolved reference 'disconnect'.
 
 FAILURE: Build failed with an exception.
 
@@ -5680,9 +5680,9 @@ BUILD SUCCESSFUL in 1m 25s
 2025-11-23T22:32:19.379+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T22:32:19.379+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T22:32:19.379+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T22:32:26.071+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T22:32:26.071+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T22:32:26.072+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 301 directories to track changes
-2025-11-23T22:32:26.072+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T22:32:26.072+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T22:32:26.072+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 301 directories to track changes
 2025-11-23T22:32:26.105+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:42482 to /127.0.0.1:45921.
 2025-11-23T22:32:26.106+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 1302: received class org.gradle.launcher.daemon.protocol.Build
@@ -5705,10 +5705,10 @@ BUILD SUCCESSFUL in 1m 25s
 2025-11-23T22:32:26.108+0700 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 14th build in daemon [uptime: 43 mins 57.046 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
 2025-11-23T22:32:26.109+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
 2025-11-23T22:32:26.109+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=13d2de9d-84c1-4151-a4a3-2567424879df,javaHome=/opt/android-studio/jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/home/keyfath/Documents/Android/daemon,pid=4757,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:8:17 Unresolved reference 'gridlayout'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:13:36 Unresolved reference 'SimpleRegister'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:15:1 Property must be initialized.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:126:54 Unresolved reference 'SimpleRegister'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:8:17 Unresolved reference 'gridlayout'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:13:36 Unresolved reference 'SimpleRegister'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:15:1 Property must be initialized.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:126:54 Unresolved reference 'SimpleRegister'.
 
 FAILURE: Build failed with an exception.
 
@@ -6021,9 +6021,9 @@ BUILD FAILED in 9s
 2025-11-23T22:33:49.379+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T22:33:49.380+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T22:33:49.380+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T22:33:53.824+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T22:33:53.824+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T22:33:53.825+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 301 directories to track changes
-2025-11-23T22:33:53.827+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T22:33:53.827+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T22:33:53.827+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 301 directories to track changes
 2025-11-23T22:33:53.867+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:55592 to /127.0.0.1:45921.
 2025-11-23T22:33:53.869+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 1403: received class org.gradle.launcher.daemon.protocol.Build
@@ -6046,9 +6046,9 @@ BUILD FAILED in 9s
 2025-11-23T22:33:53.874+0700 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 15th build in daemon [uptime: 45 mins 24.811 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
 2025-11-23T22:33:53.874+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
 2025-11-23T22:33:53.875+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=13d2de9d-84c1-4151-a4a3-2567424879df,javaHome=/opt/android-studio/jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/home/keyfath/Documents/Android/daemon,pid=4757,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:8:17 Unresolved reference 'gridlayout'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:13:36 Unresolved reference 'SimpleRegister'.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:126:54 Unresolved reference 'SimpleRegister'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:8:17 Unresolved reference 'gridlayout'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:13:36 Unresolved reference 'SimpleRegister'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:126:54 Unresolved reference 'SimpleRegister'.
 
 FAILURE: Build failed with an exception.
 
@@ -6346,9 +6346,9 @@ BUILD FAILED in 2s
 2025-11-23T22:34:49.378+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T22:34:49.378+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T22:34:49.378+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T22:34:53.676+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T22:34:53.676+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T22:34:53.678+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 301 directories to track changes
-2025-11-23T22:34:53.678+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T22:34:53.678+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T22:34:53.678+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 301 directories to track changes
 2025-11-23T22:34:53.706+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:42278 to /127.0.0.1:45921.
 2025-11-23T22:34:53.707+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 1487: received class org.gradle.launcher.daemon.protocol.Build
@@ -6371,7 +6371,7 @@ BUILD FAILED in 2s
 2025-11-23T22:34:53.713+0700 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 16th build in daemon [uptime: 46 mins 24.651 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
 2025-11-23T22:34:53.713+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
 2025-11-23T22:34:53.713+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=13d2de9d-84c1-4151-a4a3-2567424879df,javaHome=/opt/android-studio/jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/home/keyfath/Documents/Android/daemon,pid=4757,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:126:54 Unresolved reference 'SimpleRegister'.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:126:54 Unresolved reference 'SimpleRegister'.
 
 FAILURE: Build failed with an exception.
 
@@ -6702,9 +6702,9 @@ BUILD FAILED in 1s
 2025-11-23T22:36:09.377+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T22:36:09.377+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T22:36:09.377+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T22:36:10.241+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T22:36:10.241+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T22:36:10.241+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 301 directories to track changes
-2025-11-23T22:36:10.242+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T22:36:10.242+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T22:36:10.242+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 301 directories to track changes
 2025-11-23T22:36:10.267+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:41760 to /127.0.0.1:45921.
 2025-11-23T22:36:10.268+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 1569: received class org.gradle.launcher.daemon.protocol.Build
@@ -11519,9 +11519,9 @@ BUILD FAILED in 2s
 2025-11-23T23:18:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T23:18:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T23:18:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T23:19:01.101+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T23:19:01.101+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T23:19:01.101+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 179 directories to track changes
-2025-11-23T23:19:01.101+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T23:19:01.101+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T23:19:01.102+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 179 directories to track changes
 2025-11-23T23:19:01.150+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:60224 to /127.0.0.1:45921.
 2025-11-23T23:19:01.151+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 2408: received class org.gradle.launcher.daemon.protocol.Build
@@ -11935,8 +11935,8 @@ BUILD FAILED in 1s
 2025-11-23T23:20:24.276+0700 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting 27th build in daemon [uptime: 1 hrs 31 mins 55.214 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
 2025-11-23T23:20:24.276+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
 2025-11-23T23:20:24.276+0700 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=13d2de9d-84c1-4151-a4a3-2567424879df,javaHome=/opt/android-studio/jbr,javaVersion=21,javaVendor=JetBrains s.r.o.,daemonRegistryDir=/home/keyfath/Documents/Android/daemon,pid=4757,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:40:9 'val' cannot be reassigned.
-e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt:40:17 Assignment type mismatch: actual type is 'kotlin.String', but 'android.widget.TextView!' was expected.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:40:9 'val' cannot be reassigned.
+e: file:///home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt:40:17 Assignment type mismatch: actual type is 'kotlin.String', but 'android.widget.TextView!' was expected.
 
 FAILURE: Build failed with an exception.
 
@@ -12262,9 +12262,9 @@ BUILD FAILED in 2s
 2025-11-23T23:21:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T23:21:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T23:21:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T23:21:55.484+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T23:21:55.484+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T23:21:55.484+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 180 directories to track changes
-2025-11-23T23:21:55.484+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T23:21:55.484+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T23:21:55.484+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 180 directories to track changes
 2025-11-23T23:21:55.530+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:48000 to /127.0.0.1:45921.
 2025-11-23T23:21:55.532+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 2590: received class org.gradle.launcher.daemon.protocol.Build
@@ -12427,9 +12427,9 @@ BUILD SUCCESSFUL in 3s
 2025-11-23T23:23:49.377+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T23:23:49.377+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T23:23:49.377+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T23:23:49.787+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T23:23:49.787+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T23:23:49.787+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 180 directories to track changes
-2025-11-23T23:23:49.787+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T23:23:49.787+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T23:23:49.787+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 180 directories to track changes
 2025-11-23T23:23:49.824+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:48982 to /127.0.0.1:45921.
 2025-11-23T23:23:49.825+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 2705: received class org.gradle.launcher.daemon.protocol.Build
@@ -12773,9 +12773,9 @@ BUILD SUCCESSFUL in 2s
 2025-11-23T23:28:39.380+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T23:28:39.380+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T23:28:39.380+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
-2025-11-23T23:28:43.333+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt~
+2025-11-23T23:28:43.333+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change CREATED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt~
 2025-11-23T23:28:43.333+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 180 directories to track changes
-2025-11-23T23:28:43.333+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul1Activity.kt
+2025-11-23T23:28:43.333+0700 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Handling VFS change MODIFIED /home/keyfath/Documents/Android/app/src/main/java/com/example/myapplication/Modul2Activity.kt
 2025-11-23T23:28:43.333+0700 [DEBUG] [org.gradle.internal.watch.registry.impl.NonHierarchicalFileWatcherUpdater] Watching 180 directories to track changes
 2025-11-23T23:28:43.365+0700 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:53110 to /127.0.0.1:45921.
 2025-11-23T23:28:43.366+0700 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 2806: received class org.gradle.launcher.daemon.protocol.Build
@@ -13290,3 +13290,140 @@ BUILD SUCCESSFUL in 2s
 2025-11-23T23:35:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
 2025-11-23T23:35:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
 2025-11-23T23:35:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:56.302+0700 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(106)-127.0.0.1: accepted socket from [127.0.0.1:58670]
+2025-11-23T23:36:56.303+0700 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(106)-127.0.0.1: (port 43401) op = 80
+2025-11-23T23:36:56.303+0700 [DEBUG] [sun.rmi.loader] RMI TCP Connection(106)-127.0.0.1: name = "[Ljava.rmi.server.ObjID;", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@17882128
+2025-11-23T23:36:56.303+0700 [DEBUG] [sun.rmi.loader] RMI TCP Connection(106)-127.0.0.1: name = "java.rmi.dgc.Lease", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@17882128
+2025-11-23T23:36:56.303+0700 [DEBUG] [sun.rmi.loader] RMI TCP Connection(106)-127.0.0.1: name = "java.rmi.dgc.VMID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@17882128
+2025-11-23T23:36:56.303+0700 [DEBUG] [sun.rmi.loader] RMI TCP Connection(106)-127.0.0.1: name = "[B", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@17882128
+2025-11-23T23:36:56.303+0700 [DEBUG] [sun.rmi.loader] RMI TCP Connection(106)-127.0.0.1: name = "java.rmi.server.UID", codebase = "", defaultLoader = jdk.internal.loader.ClassLoaders$PlatformClassLoader@17882128
+2025-11-23T23:36:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:36:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:36:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:36:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:09.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:11.306+0700 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(106)-127.0.0.1: (port 43401) connection closed
+2025-11-23T23:37:11.306+0700 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(106)-127.0.0.1: close connection, socket: Socket[addr=/127.0.0.1,port=58670,localport=43401]
+2025-11-23T23:37:11.307+0700 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(106)-127.0.0.1: socket close: Socket[addr=/127.0.0.1,port=58670,localport=43401]
+2025-11-23T23:37:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:19.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:29.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:39.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:49.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:59.376+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:59.377+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:37:59.377+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2025-11-23T23:37:59.377+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:37:59.377+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2025-11-23T23:38:08.333+0700 [DEBUG] [java.lang.Runtime] Runtime.exit() called with status: 143
+java.lang.Throwable: Runtime.exit(143)
+	at java.base/java.lang.Shutdown.logRuntimeExit(Unknown Source)
+	at java.base/java.lang.Shutdown.exit(Unknown Source)
+	at java.base/java.lang.Terminator$1.handle(Unknown Source)
+	at java.base/jdk.internal.misc.Signal$1.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2025-11-23T23:38:08.334+0700 [DEBUG] [java.lang.Runtime] Runtime.exit() called with status: 129
+java.lang.Throwable: Runtime.exit(129)
+	at java.base/java.lang.Shutdown.logRuntimeExit(Unknown Source)
+	at java.base/java.lang.Shutdown.exit(Unknown Source)
+	at java.base/java.lang.Terminator$1.handle(Unknown Source)
+	at java.base/jdk.internal.misc.Signal$1.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+2025-11-23T23:38:08.336+0700 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [84d100d4-fe82-4678-9a85-0d70373187a2 port:45921, addresses:[localhost/127.0.0.1]]
+2025-11-23T23:38:08.337+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2025-11-23T23:38:08.337+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2025-11-23T23:38:08.337+0700 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.

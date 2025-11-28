@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myapplication">
+    package="com.example.modol">
 
     <!-- Permissions must be outside <application> -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -19,7 +19,7 @@
         android:theme="@style/Theme.MyApplication">
 
 
-        <activity android:name=".HomeActivity"
+        <activity android:name="com.example.modol.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,10 +28,10 @@
         </activity>
 
         <!-- Halaman Relay Control -->
-        <activity android:name=".MainActivity"
+        <activity android:name="com.example.modol.CustomActivity"
             android:exported="false"/>
 <!-- Halaman Modul1 -->
-        <activity android:name=".Modul1Activity"
+        <activity android:name="com.example.modol.Modul1Activity"
             android:exported="false"/>
 
     </application>
