@@ -1,4 +1,4 @@
-package com.example.myapplication.datastore
+package com.example.modol.datastore
 
 import android.content.Context
 import androidx.datastore.preferences.preferencesDataStore

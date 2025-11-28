@@ -1,4 +1,4 @@
-package com.example.myapplication.extensions
+package com.example.modol.extensions
 
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity

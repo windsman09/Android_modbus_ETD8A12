@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.modol
 
 import org.junit.Test
 

@@ -1,23 +1,20 @@
-
-package com.example.myapplication
+package com.example.modol
 
 import android.graphics.Color
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-//import androidx.gridlayout.widget.GridLayout
-import com.example.myapplication.databinding.ActivityModul1Binding
+import com.example.modol.databinding.ActivityModul2Binding // <-- IMPORT the correct binding
 import com.ghgande.j2mod.modbus.facade.ModbusTCPMaster
 import com.google.android.material.card.MaterialCardView
 import kotlinx.coroutines.*
 import com.ghgande.j2mod.modbus.procimg.SimpleRegister
 
-//private val gridlayout: Any
+class Modul2Activity : AppCompatActivity() {
 
-class Modul1Activity : AppCompatActivity() {
-
-    private val binding by lazy { ActivityModul1Binding.inflate(layoutInflater) }
+    // Use the binding generated from activity_modul2.xml
+    private val binding by lazy { ActivityModul2Binding.inflate(layoutInflater) }
     private val activityScope = CoroutineScope(Dispatchers.IO)
     private var modbus: ModbusTCPMaster? = null
 
@@ -27,17 +24,21 @@ class Modul1Activity : AppCompatActivity() {
     private val OUTPUT_ON = 0x100 // 256
     private val OUTPUT_OFF = 0x200 // 512
 
+    // Consider making this configurable or passed via intent
     private val DEFAULT_IP_PORT = "10.21.240.2:5000"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        val title = findViewById<TextView>(R.id.bgMdl)
+
+        // The ID 'bgMdl' must exist in your new layout
+        val title = binding.bgMdl
         val animation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         title.startAnimation(animation)
 
         val lantai = intent.getIntExtra("lantai", 1)
-        title.text = "Kontrol Relay Modul 1"
+        // You might want to update the title dynamically
+        title.text = "Kontrol Relay Modul 2"
 
         updateConnectionStatus(false)
         buildChannelUI()
@@ -51,11 +52,9 @@ class Modul1Activity : AppCompatActivity() {
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        disconnectModbus()
-        activityScope.cancel()
-    }
+    // ... (the rest of your functions: onDestroy, buildChannelUI, etc. remain the same)
+
+    // Make sure your other view IDs match the layout file
 
     /** Membuat UI channel relay */
     private fun buildChannelUI() {
@@ -119,6 +118,7 @@ class Modul1Activity : AppCompatActivity() {
             addView(gridLayout)
         }
 
+        // This line will now work correctly
         binding.channelsContainer.addView(frameLayout)
     }
 
@@ -133,7 +133,7 @@ class Modul1Activity : AppCompatActivity() {
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(this@Modul1Activity, "Failed to write: ${e.message}", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@Modul2Activity, "Failed to write: ${e.message}", Toast.LENGTH_LONG).show()
                     switches[channel].isChecked = !isOn
                 }
             }
@@ -169,14 +169,14 @@ class Modul1Activity : AppCompatActivity() {
 
                 withContext(Dispatchers.Main) {
                     updateConnectionStatus(true)
-                    Toast.makeText(this@Modul1Activity, "Connected to $host:$port", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Modul2Activity, "Connected to $host:$port", Toast.LENGTH_SHORT).show()
                     readAllChannels()
                     startAutoRefresh()
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
                     updateConnectionStatus(false)
-                    Toast.makeText(this@Modul1Activity, "Connection failed: ${e.message}", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@Modul2Activity, "Connection failed: ${e.message}", Toast.LENGTH_LONG).show()
                 }
             }
         }
@@ -212,7 +212,7 @@ class Modul1Activity : AppCompatActivity() {
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(this@Modul1Activity, "Failed to read: ${e.message}", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@Modul2Activity, "Failed to read: ${e.message}", Toast.LENGTH_LONG).show()
                 }
             }
         }
@@ -226,12 +226,12 @@ class Modul1Activity : AppCompatActivity() {
                 modbus = null
                 withContext(Dispatchers.Main) {
                     updateConnectionStatus(false)
-                    Toast.makeText(this@Modul1Activity, "Disconnected", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@Modul2Activity, "Disconnected", Toast.LENGTH_SHORT).show()
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
                     updateConnectionStatus(false)
-                    Toast.makeText(this@Modul1Activity, "Error disconnecting: ${e.message}", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@Modul2Activity, "Error disconnecting: ${e.message}", Toast.LENGTH_LONG).show()
                 }
             }
         }
