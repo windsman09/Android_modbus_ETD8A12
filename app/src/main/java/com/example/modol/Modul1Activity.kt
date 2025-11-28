@@ -171,6 +171,7 @@ class Modul1Activity : AppCompatActivity() { // FIX 1: Inherit from AppCompatAct
         }
     }
     /** Membaca semua channel */
+
     private fun readAllChannels() {
         activityScope.launch {
             try {
@@ -181,10 +182,12 @@ class Modul1Activity : AppCompatActivity() { // FIX 1: Inherit from AppCompatAct
                             val value = registers[i].value
                             val isOn = (value != 0) // ✅ ON jika bukan 0
                             switches[i].isChecked = isOn
-                            labels[i].text = if (isOn) "ON" else "OFF"
+
+                            // Jangan ubah nama label, hanya ubah warna
                             labels[i].setBackgroundColor(
                                 if (isOn) Color.parseColor("#00AA00") else Color.parseColor("#D41900")
                             )
+
                             Log.d("Modbus", "Register[$i] = $value")
                         }
                     }
@@ -196,6 +199,7 @@ class Modul1Activity : AppCompatActivity() { // FIX 1: Inherit from AppCompatAct
             }
         }
     }
+
 
     // This function can be removed as it's not needed.
     // private fun extracted() {
